@@ -30,7 +30,7 @@ proc traj data=have
      outplot = want_op
      outstat = want_os ci95M;
   id data_ID;
-  data_x1-data_x6;
+  var data_x1-data_x6;
   indep time_1-time_6;
   order 2 2 2 2;
   model cnorm;
